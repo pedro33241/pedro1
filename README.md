@@ -1,4 +1,3 @@
-#https://pedro33241.github.io/pedro1/
 <!DOCTYPE html>
 
   <!--configurando metadados do site-->
@@ -238,4 +237,4 @@
                   const slideshowImages = document.querySelectorAll(".slider .slideshow");const nextImageDelay =6000;let currentImageCounter = 0;slideshowImages[currentImageCounter].style.opacity = 1;setInterval(nextImage, nextImageDelay);function nextImage(){const tempCounter = currentImageCounter ;setTimeout(() =>{slideshowImages[tempCounter].style.opacity = 0; },2000);currentImageCounter = (currentImageCounter + 1) % slideshowImages.length; slideshowImages[currentImageCounter].style.opacity = 1;}
 </script> 
 
- <script>/**/ window.onscroll= function(){scroll();};function scroll(){let btn = document.getElementById("btnTop_script");if(document.documentElement.scrollTop > 50){btn.style.opacity= "1";btn.style.right="1%"; }else{btn.style.opacity= "0";btn.style.right="-20%";btn.style.transition="1.1s";}}function backToTop(){document.documentElement.scrollTop = 0;}</script> 
+ <script>/**/ window.onscroll= function(){scroll();};function scroll(){let btn = document.getElementById("btnTop_script");if(document.documentElement.scrollTop > 50){btn.style.opacity= "1";btn.style.right="1%"; }else{btn.style.opacity= "0";btn.style.right="-20%";btn.style.transition="1.1s";}}function backToTop()
