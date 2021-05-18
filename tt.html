@@ -1,0 +1,255 @@
+ 
+  <head>
+<?php 
+include_once "inde.php";
+ session_start();
+
+ 
+ ?>
+ <style>  
+
+    *,
+    *:before,
+    *:after{ 
+    margin:0;  
+    padding:0; 
+    scroll-behavior: smooth;  } 
+
+    body{
+    background-color:#3a3a3a   ;
+    font-weight:normal;
+    font-family: sans-serif;  
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust:100% ; }
+    
+/* configurando scroll vertical e horizontal do website */
+    ::-webkit-scrollbar{
+    -webkit-border-radius:4px; }
+
+    ::-webkit-scrollbar-track-piece{
+    background:#363636;  } 
+
+    ::-webkit-scrollbar-thumb{ 
+    background:#696969;
+    -webkit-border-radius:3px;  
+    height:11%;
+    width:11%}
+
+    /* estilização do head music*/
+    label p.head_text_music{
+    width:100%;
+    text-align:center;
+    padding:auto 12px;
+    color:#cccaca;  }
+  
+    div.body_music{   
+    width:100%;   
+    background:#2b2b2b; 
+    padding:0% 0% 5px 0%;
+    border:transparent;  
+    margin:11px auto;}
+
+/* scrolling musica*/
+    div.scroll_music{ 
+    text-overflow:ellipsis ;
+    overflow-y:hidden !important;
+    -webkit-overflow-scrolling:touch;  }
+
+    div.scroll_music::-webkit-scrollbar{ 
+    -webkit-border-radius:4px; 
+    height:3px;
+    width:6px;  }
+
+  
+    div.scroll_music::-webkit-scrollbar-track-piece{
+    background:transparent !important;
+    -webkit-border-radius:3px; } 
+ 
+    div.scroll_music::-webkit-scrollbar-thumb{ 
+    background:#3a3939;  
+    -webkit-border-radius:3px; } 
+/* end*/
+
+/* estilizando tabela*/
+    .table_music{   
+    margin:-11px 0% 0% 0%; 
+    padding:8px 0%; }
+ 
+    .tr_music{  }
+
+    .td_image{  
+    border-radius:9px 9px 9px 9px;  
+    user-select: none;  
+    font-weight: normal;  
+    -webkit-user-select: none;    
+    -moz-user-select: none;
+    user-select: none; 
+    text-align:center;    
+    list-style:none;  
+    transition:.4s; }
+
+    .hyper_text_link{   
+    text-decoration:none;   }
+  
+  .td_image1:hover{  
+    -webkit-transform: scale(1.1);  transition:.4s;  }
+    
+    /*nosso logo da capa de imagem da musica com posição absolute */
+ 
+
+    
+   img.capa_image_musica{ 
+    width:169px;  
+    border-radius:9px 9px 9px 9px ;  
+    height:133px ; }
+
+    .legenda_da_musica{  
+    width:169px; 
+    padding:0% 0;   
+    margin:-11% 0%;
+    color:#cccaca;
+    text-align:center;  } 
+ 
+
+    p.titulo_musica{   color:#ff0000;   }
+
+    .hr{
+    height:3.1px;
+    border-radius:3px;
+    background:#ff0000; 
+    width:80%;
+    text-align:center;  
+    border:none;
+    margin:-13px auto 0% 9.7%; }
+ 
+     /* delimitando nosso body caso a largura for maior que 1590*/
+    @media all and (min-width:1550px){  .main{  width:1590px;  } }
+ 
+ </style>
+<head> 
+<body>     
+ 
+<center> 
+<div class="main">
+    
+  
+   
+<center> 
+   <section >
+<div  style="margin:0px 0% 66px 0%">
+           <label style="text-align:center">
+           <h2 style="color:#fff">Músicas</h2>
+           <p class="head_text_music">Todas as tracks do Dj Las Vegas, disponiveis aqui para ouvir e fazer o download</p>
+           </label>
+
+
+        <div class="body_music">   
+        <div class="scroll_music"> 
+           
+        <table class="table_music"   cellspacing="30">
+        <tbody >
+        <tr class="tr_music" > 
+                <td class="td_image td_image1">
+              
+        <a href="#" rel="dofollow" class="hyper_text_link"> 
+           <!--apresentando as imagens de capa que serão armazenadas no banco de dados aqui !--> 
+           <img src="IMG-20210322-WA0036.jpg" title="imagem de uma música" alt="imagem de uma música" class="capa_image_musica" /> </a> </td>   
+               <td class="td_image td_image1">
+              
+        <a href="#" rel="dofollow" class="hyper_text_link"> 
+           <!--apresentando as imagens de capa que serão armazenadas no banco de dados aqui !--> 
+           <img src="IMG-20210322-WA0036.jpg" title="imagem de uma música" alt="imagem de uma música" class="capa_image_musica" /> </a> </td>   
+               <td class="td_image td_image1">
+              
+        <a href="#" rel="dofollow" class="hyper_text_link"> 
+           <!--apresentando as imagens de capa que serão armazenadas no banco de dados aqui !--> 
+           <img src="IMG-20210322-WA0036.jpg" title="imagem de uma música" alt="imagem de uma música" class="capa_image_musica" /> </a> </td>   
+             
+           
+            </tr>  
+         
+        <tr class="tr_music">  
+          <?php 
+
+          $sql= "SELECT usuario,senha FROM  cadastrar ORDER BY id desc";
+
+          $link= mysqli_query($conect, $sql);
+          mysqli_close($conect);
+
+          if (mysqli_num_rows($link) > 0):
+
+          while ($dados = mysqli_fetch_array($link)):
+            
+         ?> 
+
+ <?php
+
+session_unset();
+ 
+ 
+
+  ?>
+
+<?php
+
+error_reporting(0);
+ini_set(“display_errors”, 0 );
+
+?>           
+    <td class="td_image">
+     
+                <a href="#" rel="dofollow" class="hyper_text_link">  
+           <nav  class="legenda_da_musica"> 
+           <span class="f">
+           <p class="titulo_musica"><!--titulo da imagem aqui!--><?php echo $dados['usuario'];?></p> 
+           <p><!--autor da musica aqui! --><?php echo $dados['senha'];?></p> 
+          </span> 
+          </nav> 
+        </a>  
+           </td> <?php  endwhile; 
+else:?>
+
+  <span style="text-align:center;margin-left: 40%;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:18px;color:#9f9b9a;">Sem registo de Faturamento!</span>
+
+  <?php
+
+endif;?>    
+       </tr>   
+         
+ 
+           </tbody>
+       </table>   
+      </div>  
+       
+      </div>  <nav > 
+           <hr class="hr"/> 
+       </nav></div> 
+   </setion>   
+   
+         
+
+ <section><!-- outro sectioon --> </section>
+  </center>  
+</div>
+</center>
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+   <br style="">
+ 
+  </body>
+  </html>
+
+
+

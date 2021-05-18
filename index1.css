@@ -1,0 +1,724 @@
+@charset="utf-8"
+
+
+
+
+
+
+   *{ 
+   margin:0;  
+   padding:0; 
+   scroll-behavior: smooth;  } 
+
+   body{
+   background:#3a3a3a;
+   font-weight:normal; 
+   font-family: sans-serif;  
+   -webkit-text-size-adjust:100%; 
+   -ms-text-size-adjust:100% ; }
+   
+   /* configurando scroll vertical e horizontal do website para o navegadores compativeis*/
+   ::scrollbar {
+   border-radius:4px;    }
+
+   ::scrollbar-track-piece{
+   background:#363636;  } 
+
+   ::scrollbar-thumb{ 
+   background:#696969;
+   border-radius:3px;  
+   height:11%;
+   width:11%}
+
+/* configurando scroll vertical e horizontal do website para o navegador safari,google e opera mini*/
+   ::-webkit-scrollbar {
+   border-radius:4px;    }
+
+   ::-webkit-scrollbar-track-piece{
+   background:#363636;  } 
+
+   ::-webkit-scrollbar-thumb{ 
+   background:#696969;
+   border-radius:3px;  
+   height:11%;
+   width:11%}
+
+   /* configurando scroll vertical e horizontal do website para o navegador fire fox*/
+   ::-moz-scrollbar {
+  border-radius:4px;    }
+
+   ::-moz-scrollbar-track-piece{
+   background:#363636;  } 
+
+   ::-moz-scrollbar-thumb{ 
+   background:#696969;
+   border-radius:3px;  
+   height:11%;
+   width:11%}
+
+
+      /*sliders*/
+      /* estilizando nossos background_image*/
+       .image2{ 
+       background-image: url('fundo-3d-banner.png') ;      
+       position: absolute;   
+       user-select: none;
+       left: 0;   
+       width: 100%;
+       backface-visibility: hidden;
+       background-attachment: fixed;
+       height: 100%;  
+       background-repeat: none;
+       background-size: cover;      
+       top: 0; 
+       background-clip:content-box; 
+       background-origin: initial; 
+       background-position:center ; }
+
+       .image3{ 
+       user-select: none;
+       background-clip:content-box; 
+       background-origin: initial; 
+       background-position:center ;
+       background-image: url('uu.jpg.webp');  
+       position: absolute;   
+       left: 0;   
+       backface-visibility: hidden;
+       background-attachment: fixed;
+       background-repeat: none;
+       background-size: cover;      
+       height:100%;  
+       width: 100%;
+       top: 0; } 
+          
+       .image1{ 
+       background-clip:content-box; 
+       background-origin: initial; 
+       background-position:center ; 
+       background-image: url('fundo-3d-banner.png') ;
+       background-repeat: none;
+       background-size: cover;      
+       backface-visibility: hidden;
+       background-attachment: fixed;
+       position:absolute;   
+       user-select: none;
+       left: 0;    width: 100%;
+       height:100%;  
+       top: 0; 
+       background-clip:content-box; 
+       background-origin: initial; 
+       background-position:center ;}
+
+       .image4{
+       user-select: none;
+       background-clip:content-box; 
+       background-origin: initial; 
+       background-position:center ; 
+       background-image: url('fundo-3d-banner.png');      
+       position: absolute;   
+       background-repeat: none;
+       background-size: cover;      
+       left: 0;    
+       backface-visibility: hidden;
+       background-attachment: fixed;
+       width: 100%;
+       height:100%;  
+       top: 0; }
+
+       .image6{ 
+       background-image: url('headphones-4595492__340.webp');      
+       position: absolute;  
+       background-repeat: none;
+       background-size: cover;    
+       backface-visibility: hidden;
+       background-attachment: fixed;   
+       user-select: none;
+       left: 0;    
+       width: 100%;
+       height:100%;  
+       top: 0; 
+       background-clip:content-box; 
+       background-origin: initial; 
+       background-position:center ; }
+
+       .image5{ 
+       background-clip:content-box; 
+       user-select: none;
+       background-origin: initial; 
+       background-position:center ;
+       background-image: url('fundo-3d-banner.png');      
+       position: absolute;   
+       background-repeat: none;
+       background-size: cover;      
+       backface-visibility: hidden;
+       background-attachment: fixed;
+       left: 0;    
+       width: 100%;
+       height: 100%;  
+       top: 0; }
+
+       .slideshow{    
+       opacity: 0;
+       transition: opacity 1s ease-in-out; }
+      /*end sliders*/
+ 
+
+ 
+
+
+
+      #logo_dj_las_vegas{ 
+      position: absolute;
+      left: 0; 
+      height: 3.3em;
+      width: 3.3em;
+      margin:-36px 0 0 33px }
+
+ 
+       #nav_dasboard{
+        background: linear-gradient(to top, #252323, #3c3a3a);  
+       position:fixed;
+       visibility: visible;
+       left:0;      
+       top:0;     
+       padding: 39px 0px;
+       width:100%;  }
+
+
+       .aside_dashboard{ 
+       position:fixed;
+       visibility: visible;
+       left:0;     
+       overflow-y:hidden;
+       overflow-x:hidden;
+       -webkit-overflow-scrolling:none;
+       background:transparent; 
+       top:0;    
+       transition:0s;
+       margin:0px 0px 0px 0px;   
+       padding: 33px 0px;
+       width:100%; } 
+
+       .dashboard_ul{  
+       margin:0px 0px 0px 0px; 
+       padding:0px 44px;   
+       float: right;
+       border-bottom:none;}
+
+       .dashboard_li{ 
+        display: inline-block; 
+       padding:0px 0px 0px 0px;     
+       list-style:none !important; }
+
+       .dashboard_a{    
+       border-radius: 4px;
+       margin:0px 13px;
+       padding:9px 16px;   
+       position:static;     
+       background: linear-gradient(to top, #545050, #3a3a3a); 
+       transition:0s;
+       text-decoration:none !important;    
+       color:#fff;  }
+ 
+       .home{background: linear-gradient(to top, #ec1919, #bb0808);}
+
+       .home:hover{background:linear-gradient(to top, #bb0808,#bb0808);}
+  
+       .dashboard_a_hover:hover{background: linear-gradient(to top, #3a3a3a,#3a3a3a);color:#ffffff; }
+ 
+       .checkbox{display: none;}
+
+       .fa-home{visibility: hidden;display: none; }
+
+       .fa-music{visibility: hidden;display: none; }
+
+       .fa-picture-o{visibility: hidden; display: none;}
+
+       .fa-support{visibility: hidden; display: none;}
+
+       .fa-phone{visibility: hidden; display: none;}
+
+       .redes_social{display: none; display: none;}
+
+ 
+
+
+ 
+       @media all and (max-width:800px) { 
+ 
+       /*dashaboard*/
+       /* estilizando o nosso dashboard*/
+       .aside_dashboard{   
+       overflow-x:hidden !important;
+       overflow-y:visible;
+       -webkit-overflow-scrolling:touch;
+       background-color: #2b2b2b; 
+       visibility: hidden; 
+       transition: .4s;
+       right: 0;
+       height:100%;  
+       margin:0px 0% 0% -100%;   
+       width:255px; } 
+
+      /* configurando scroll vertical e horizontal do website para o navegadores compativeis*/
+
+       .aside_dashboard::scrollbar{
+       border-radius:11px; 
+       width: 8px; }
+
+       .aside_dashboard::scrollbar-track-piece{
+       background:transparent;
+       border-radius:3px;  }
+
+       .aside_dashboard::scrollbar-thumb{
+       background:#3a3a3a;   
+       border-radius:3px; } 
+
+       /* configurando scroll vertical e horizontal do website para o navegadores compativeis como google,safari e opera*/
+       .aside_dashboard::-webkit-scrollbar{
+       -webkit-border-radius:11px; 
+       width: 5px; }
+
+       .aside_dashboard::-webkit-scrollbar-track-piece{
+       background:transparent;
+       -webkit-border-radius:3px;  }
+
+       .aside_dashboard::-webkit-scrollbar-thumb{
+       background:#3a3a3a;   
+       -webkit-border-radius:3px; } 
+
+       /* configurando scroll vertical e horizontal do website para o navegadores compativeis como mozila*/
+       .aside_dashboard::-moz-scrollbar{
+       -moz-border-radius:11px; 
+       width: 5px; }
+
+       .aside_dashboard::-moz-scrollbar-track-piece{
+       background:transparent;
+       -moz-border-radius:3px;  }
+
+       .aside_dashboard::-moz-scrollbar-thumb{
+       background:#3a3a3a;   
+       -moz-border-radius:3px; } 
+       /* end*/
+
+       /* ...*/
+       .dashboard_ul{ 
+       position:relative;float:none;
+       margin:23% 0% 11% 0%; 
+       padding:0 0 11px 0;   
+       border-bottom: 1px solid #939393;}
+
+       .dashboard_li{ 
+        display: block; 
+       padding:0% 0% 43px 0%;    
+       list-style:none !important; }
+
+       .dashboard_a{    
+       position:absolute;
+       margin: 0px 0px;
+       border-radius: 0px;
+       left:0; 
+       width:95%;
+       background:transparent;
+       padding:24px 0;  
+       padding-top:4% ; 
+       padding-bottom:5% ;   
+       font-size: 17px;   
+       padding-left:5%;  
+       font-family:Calibri (Body);
+       padding-right:auto; 
+       transition:.8s;
+       text-decoration:none !important;    
+       color:#fff;  }
+
+       .dashboard_a_hover:hover{ 
+       background:#3a3a3a;
+       transition:.4s;
+       color:#ddd; }
+
+      .home{background:#3a3a3a;} 
+
+
+       .home:hover{background:#3a3a3a;}
+       
+      .fa-home{visibility: visible;display: inline-block;}
+
+      .fa-music{visibility: visible;display: inline;}
+
+      .fa-picture-o{visibility: visible;display: inline-block;}
+
+      .fa-support{visibility: visible;display: inline-block;}
+
+      .fa-phone{visibility: visible;display: inline-block;}
+ 
+ 
+       .menu{  
+       cursor: pointer;
+       border-radius: 50%;
+       transform: rotate(180deg);
+       width: 60px; right:29px; 
+       position:fixed;top:0;
+       background-color:transparent;
+       display: block;
+       margin:19px 0px 0px 0px;
+       height:60px;       }
+
+       .menu:hover{  
+       cursor: pointer;
+       transition: all .4s ease-in-out; } 
+         
+       .hamburguer{
+       display: block; 
+       border-radius: 11px 11px 11px 11px;
+       position: relative;
+       width: 28px;  
+       top:29px; 
+       transition: .2s ease-in-out;
+       left:17px; 
+       height:5%; 
+       background-color: #fb062a;  }
+
+       .hamburguer:before{
+       background-color:#fb062a;
+       content:'';
+       border-radius: 11px 11px 11px 11px;
+       transition: .2s ease-in-out;
+       display: block;
+       position: absolute;
+       width: 109%; 
+       height:87%; }
+
+       .hamburguer:after{
+       background-color:#fb062a;
+       content:'';
+       border-radius: 11px 11px 11px 11px;
+       transition: .2s ease-in-out;
+       display: block;
+       position: absolute;
+       width: 78%; 
+       height:87%; }
+
+       .hamburguer:after{
+       bottom:-10px; }
+
+       .hamburguer:before{
+       top:-10px; }
+
+       .checkbox{
+       display: none !important; }
+
+       .checkbox:checked ~ label .hamburguer{
+       transform: rotate(45deg); }       
+
+       .checkbox:checked ~ label .hamburguer:before{
+       transform: rotate(100deg);
+       top:0;  width: 100%; }
+
+       .checkbox:checked ~ label .hamburguer:after{
+       transform: rotate(98deg);  
+       bottom:0;  
+       width: 100%; }
+
+       .checkbox:checked ~ label .menu{
+       box-shadow: 0 0 0 333vw rgba(0,0,0,0.3); ,0 0 0 165vw #dbd7d79a; }
+ 
+       .checkbox:checked  ~ .aside_dashboard{  transition: .6s;
+       visibility: visible; 
+       margin:0px 0% 0% 0%;     }
+        
+       /* estilizando links das redes sociais*/
+       .redes_social{
+       padding:21px 0px 0px 0px ;
+       border-top: 1px solid #939393;
+       color:white;
+       display: block;
+       margin:17% 0 0 0px; }
+
+       .redes_social_ul{   
+       position:relative; 
+       display: inline-flex; }
+
+       .siga{
+       margin:0px 0px 0px 17px; }
+
+       .redes_social_list{
+       list-style: none;
+       padding:11px 41px; 
+       margin: -19px 0px 0px -27px; }
+
+       .facebook{  
+       padding:5px 11.1px;
+       border-radius:4px;
+       transition: .3s;
+       position: absolute;
+       color:white; 
+       text-decoration: none;
+       border:1px solid #919191;
+       list-style: none; }
+
+       .whatsapp{
+       list-style: none;
+       padding:5px 9px;
+       border-radius:4px; 
+       transition: .3s;
+       position: absolute;
+       color:white; 
+       text-decoration: none;
+       border:1px solid #919191; }
+
+       .instagram{   
+       list-style: none;
+       position: absolute;
+       padding:5px 9px;
+       border-radius:4px;
+       transition: .3s;
+       color:white; 
+       text-decoration: none;
+       border:1px solid #919191; }
+
+       .youtube{   
+       position: absolute;
+       list-style: none;
+       padding:5px 9px;
+       border-radius:4px;
+       transition: .3s;
+       color:white; 
+       text-decoration: none;
+       border:1px solid #919191; }
+
+
+       .redes:hover{ 
+       color:#fff; 
+       transition: .3s;
+       background: #696969; }     }
+
+       /*dando uma largura de 100% ao dashboard lateral esquerdo quando a tela for menor que 255px para ser responsivo*/
+       @media all and (max-width:255px) {  .aside_dashboard{  width:100%;   }   }
+
+       /* dando um display:block as redes sociais quando a tela for menor que 229px*/
+       @media all and (max-width:229px) { 
+       .redes_social_ul{  
+        margin:0 0 0 -33px;  
+        display:block; }
+
+       .redes_social_list{
+       list-style: none;
+       padding:18px 11px; 
+       margin: -19px 0 0 0; } 
+
+       }
+
+       /*end dashboard*/   
+
+       .hgroup{
+       color: #ffffff;
+       margin: 25% 0% 0% 3%; 
+       position: absolute; }
+
+      .cabecalho1_musica{
+      letter-spacing: 0.5;
+      animation: slid 3s ease;
+      font-size:1.9em; }
+
+     .cabecalho2_musica{
+     letter-spacing: 0.5;
+     animation: slid 6.2s ease; 
+     font-size:1.2em;
+     margin:-23px 0% 0% 0%; }
+ 
+    @keyframes slid{
+
+    0% {transform:  translateX(-600px); }  
+
+    100%{transform: translateX(0); }
+
+    }
+
+
+
+   /* musicas*/
+   /* estilização do head music*/
+
+   .section_musica{
+margin: 900px 0% 0% 0%;
+left: 0;
+position: absolute;
+width: 100%;
+   }
+   hgroup.musica{
+   margin:0px 0% 22px 0%; 
+   text-align: center;
+   letter-spacing: .5px; 
+   font-weight: normal;
+   color: #fff;}
+
+   .cabecalho4_musica{
+   color:#fff;   
+   font-size: 1em; 
+   margin:3px 0% 0% 0%;
+   font-weight: normal; } 
+
+   div.body_music{   
+   width:100%;    
+   background: linear-gradient(to top, #252323, #3c3a3a);
+   border:none;  
+   margin:-29px 0 177px 0 ;}
+
+/* scrolling musica*/
+   div.scroll_music{  position: relative;
+   overflow-y:hidden !important;
+   -webkit-overflow-scrolling:touch;  }
+
+   /* configurando scroll scrolling musica vertical e horizontal do website para os navegadores compativeis*/
+    div.scroll_music::scrollbar{ 
+   border-radius:4px; 
+   height:3px;
+   width:6px;  }
+
+ 
+   div.scroll_music::scrollbar-track-piece{
+   background:transparent !important;
+    border-radius:3px; } 
+
+   div.scroll_music::scrollbar-thumb{ 
+   background:#3a3939;  
+    border-radius:3px; }
+
+   /* configurando scroll scrolling musica vertical e horizontal do website para o navegador opera mini,chrome e safari*/
+   div.scroll_music::-webkit-scrollbar{ 
+    border-radius:4px; 
+   height:3px;
+   width:6px;  }
+
+ 
+   div.scroll_music::-webkit-scrollbar-track-piece{
+   background:transparent !important;
+    border-radius:3px; } 
+
+   div.scroll_music::-webkit-scrollbar-thumb{ 
+   background:#3a3939;  
+   border-radius:3px; } 
+
+   /* configurando scroll scrolling musica vertical e horizontal do website para o navegador fire fox*/
+ div.scroll_music::-moz-scrollbar{ 
+   border-radius:4px; 
+   height:3px;
+   width:6px;  }
+
+ 
+   div.scroll_music::-moz-scrollbar-track-piece{
+   background:transparent !important;
+   border-radius:3px; } 
+
+   div.scroll_music::-moz-scrollbar-thumb{ 
+   background:#3a3939;  
+    border-radius:3px; } 
+
+/* end*/
+
+/* estilizando tabela*/
+   .table_music{     
+    margin: 23px 0;
+   padding:-30px 0%;  }
+ 
+   .td_image{     
+   border-radius:9px 9px 9px 9px;  
+   -moz-border-radius:9px 9px 9px 9px;  
+   -webkit-border-radius:9px 9px 9px 9px;  
+   user-select: none;  
+   font-weight: normal;  
+   -webkit-user-select: none;    
+   -moz-user-select: none; 
+   -ms-user-select: none; 
+   padding: 0 0 111px 0;
+   user-select: none; 
+   text-align:center;     
+   list-style:none;  
+   transition:.4s; }
+
+   .hyper_text_link{   
+   text-decoration:none;   }
+ 
+   .td_image1:hover{  
+   transform: scale(1.1); 
+   -webkit-transform: scale(1.1); 
+   -moz-transform: scale(1.1); 
+   -ms-transform: scale(1.1);   
+   transition:.4s;  }
+   
+   /*nosso logo da capa de imagem da musica com posição absolute */
+
+   .logo_capa{ 
+   width: 5.5em;
+   height: 5.5em;  }
+
+   .figure_logo{
+   background: rgba(0,0,0,0.3); 
+   border-radius:9px 9px 9px 9px ;
+   -moz-border-radius:9px 9px 9px 9px ;
+   -ms-border-radius:9px 9px 9px 9px ; 
+   -webkit-border-radius:9px 9px 9px 9px ;
+   position: absolute;
+   margin: 0 0 0 0;
+   padding: 25px 40.4px; }
+   
+   img.capa_image_musica{ 
+   width:169px;  
+   border-radius:9px 9px 9px 9px ;
+   -moz-border-radius:9px 9px 9px 9px ;
+   -ms-border-radius:9px 9px 9px 9px ; 
+   -webkit-border-radius:9px 9px 9px 9px ;  
+   height:139px ; }
+
+   .legenda_da_musica{  
+   width:169px;  
+   font-weight: normal; 
+   color:#cccaca;
+   position: absolute ;
+   text-align:center;margin: 11px 0 0 0  } 
+
+
+   p.titulo_musica{ color:#ff0000;  margin: -6px 0% 0% 0%; }
+
+   .hr{
+   height:3.4px;
+   border-radius:3px;
+
+   -moz-border-radius:3px ;
+   -ms-border-radius:3px ; 
+   -webkit-border-radius:3px ;  
+   background:#fb062a; 
+   width:80%;
+   text-align:center;  
+   border:none;
+   margin:0px auto 0% 9.7%; }
+   /*end musica*/
+
+  /* delimitando nosso body caso a largura for maior que 1590*/
+   @media all and (min-width:1550px){  .main{  width:1590px;  } }
+  
+
+
+      /* style do button backtop scroll*/
+       .btnTop_style{
+       position:fixed;
+              right:-20%;
+       width:45px;
+       height:45px;
+       background:#252323; 
+       bottom:30px;
+       border:none;
+       outline:none;
+       border-radius:50px;
+       -webkit-border-radius:50px;
+       -ms-border-radius:50px;
+       -moz-border-radius:50px;
+       cursor:pointer;
+       opacity:0;
+       transition: 1.2s; }
+ 
+       .icone_top{
+       color:#ddd; 
+       font-size:1.8em;
+       transform: rotate(90deg); }
+ /*end*/

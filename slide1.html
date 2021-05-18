@@ -1,0 +1,52 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+       <title></title>
+
+       <script type="text/javascript">
+             
+var i=0;
+var images=[];
+var time = 5000;
+
+images[0]= '4.jpg';
+images[1]=  '2.png' ;
+images[2]= '3.png';
+
+
+
+function changeImg(){ 
+      document.slide.src = images[i];
+
+      if(i < images.length -1){
+            i ++;
+      }
+
+      else {
+            i= 0;
+      }
+
+      setTimeout("changeImg()", time);
+      }
+
+      window.onload= changeImg;
+
+       </script>
+ 
+ </head>
+ <body>
+ <img src="" name="slide" class="login-page"> 
+ </body>
+ </html>
+
+ <style type="text/css">
+       
+
+      .login-page
+{          margin:0 auto;
+position:fixed; 
+  width:100%;  transition: 4s;opacity: .9;
+   height:81%;
+    right:0; top:0;
+}
+ </style>
